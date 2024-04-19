@@ -1,0 +1,58 @@
+.header-content {
+    background: #EB00D3;
+    color: white;
+    width: 100%;
+    height: 141px;
+    margin-bottom: 2em;
+}
+.brand-logo-container {
+    display: flex;
+    justify-content: center;
+}
+.nav-menu-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -1em;
+}
+.nav-menu-container nav ul {
+    color: #ffff;
+}
+.logo-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-items {
+    display: flex;
+    text-decoration: none;
+}
+.menu-items li {
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.search-cart-container {
+    display: flex;
+}
+
+
+
+
+.userActionsBar {
+    background: #000000;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg-discount-container {
+    color: #ffff;
+}
+.user-actions-container {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+}
+.img-msg-container {
+    display: flex;
+}

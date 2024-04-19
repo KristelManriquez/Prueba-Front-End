@@ -1,0 +1,118 @@
+.single-product-container {
+    display: flex;
+}
+.breadcrumbs-product-img {
+    width: 50%;
+}
+.product-information-container {
+    width: 50%;
+}
+.discount-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EB00D3;
+    height: 40px;
+    width: 74px;
+    border-radius: 8px;
+    color: #ffff;
+}
+.product-numbers-container {
+    display: flex;
+    align-items: center;
+}
+.product-price {
+    color: #EB00D3;
+    font-size: 32px;
+    line-height: 22.58px;
+    letter-spacing: 1.25px;
+    font-weight: 700;
+    margin-left: .2em;
+
+}
+.price-before {
+    text-decoration: line-through;
+    font-size: 24px;
+    line-height: 22.58px;
+    margin-left: .4em;
+}
+.free-shipping-container {
+    width: 84.29px;
+    height: 14px;
+    background: rgba(0, 255, 240, 0.2);
+}
+.free-shipping {
+    font-size: 8px;
+    font-weight: 500;
+}
+.product-description-card {
+    padding: 16px;
+    border-radius: 5px;
+    background: #F5F4F4 !important;
+}
+.form-select {
+    width: 280px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 14px;
+    color: #EB00D3 !important;
+    border: 1px solid #EB00D3;
+    border-radius: 8px;
+    padding: 5px;
+}
+.quantity-button-container {
+    display: flex;
+    align-items: center;
+}
+.quantity-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.quantity-control-container {
+    background: #D9D9D9;
+    border-radius: 5px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quantity {
+    background: rgba(217, 217, 217, 0.17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.btn-outline {
+    height: 40px;
+    background: #EB00D3;
+    color: #ffff;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+.margin {
+    margin-left: 20px;
+    margin-top: 13px;
+}
+.inputs-radio-container {
+    display: flex;
+}
+.input-radio-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid #EB00D3;
+    border-radius: 5px;
+}
+.input-radio-text {
+    margin-left: 5px;
+}
