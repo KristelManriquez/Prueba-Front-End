@@ -50,7 +50,7 @@ export const SingleProduct = () => {
         <div>
           <p>Sabor:</p>
           <div>
-            <select class="form-select">
+            <select className="form-select">
               <option selected>Escoger sabor</option>
               <option value="">New Delhi</option>
               <option value="">Istanbul</option>
