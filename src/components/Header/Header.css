@@ -41,21 +41,22 @@
   background: #000000;
   height: 43px;
   display: flex;
-  margin: 0 auto;
-  align-items: center;
+  justify-content: space-between; 
+  align-items: center; 
+  position: relative; 
 }
 .msg-discount-container {
   color: #ffff;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
 .user-actions-container {
   display: flex;
   height: 20px;
   align-items: center;
   color: #ffff;
-  flex: 1;
+  margin-left: auto; 
 }
 .img-msg-container {
   display: flex;
@@ -78,8 +79,11 @@
 .brand-title {
     font-weight: 800;
     font-size: 40px;
+    color: #ffff;
 }
 .menu-search-cart-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  position: relative; 
 }
