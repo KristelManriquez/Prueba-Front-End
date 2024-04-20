@@ -34,7 +34,17 @@ export const Header = () => {
       </div>
       {/* Logo - Menu de navegacion - Buscar - Carrito  */}
       <div className="logo-menu-container">
-        <img src={menuIcon} alt="Menu" className="menu-icon" />    
+        <div className="mobile-menu-container">
+          <a href="#" class="pointer" id="menuToggle">
+            <img src={menuIcon} alt="Menu" class="menu-icon" />
+          </a>
+          <div id="mobileMenu">
+            <a href="#" class="close-menu pointer">
+              Cerrar
+            </a>
+          </div>
+        </div>
+
         <div className="brand-logo-container">
           <h2 className="brand-title">BRAND</h2>
         </div>
@@ -81,8 +91,13 @@ export const Header = () => {
             </nav>
           </div>
           <div className="search-cart-container">
-            <img className="pointer" src={searchIcon} alt="Buscar" />    
-            <img src={cartIcon} alt="Carrito" style={{ marginLeft: '10px' }} className="pointer" /> 
+            <img className="pointer" src={searchIcon} alt="Buscar" />
+            <img
+              src={cartIcon}
+              alt="Carrito"
+              style={{ marginLeft: "10px" }}
+              className="pointer"
+            />
           </div>
         </div>
       </div>
