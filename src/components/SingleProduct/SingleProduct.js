@@ -44,8 +44,8 @@ export const SingleProduct = () => {
         <div className="breadcrumbs">
           <p>INICIO / PROTEÍNAS / WHEY PROTEIN</p>
         </div>
-        <div>
-          <div>
+        <div className="product-img-main-container">
+          <div className="main-img-container">
             <img src={productImg} alt="Producto" />
           </div>
           <div className="product-imgs-container">
@@ -79,7 +79,7 @@ export const SingleProduct = () => {
         <div className="sku-container">
           <p>SKU 1588023425509</p>
         </div>
-        <div>
+        <div className="product-description-container">
           <Card variant="outlined" className="product-description-card">
             <p className="product-description">
               Exclusiva fórmula proteica a base de suero de leche aislado e

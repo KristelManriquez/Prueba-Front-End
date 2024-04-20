@@ -5,6 +5,7 @@ import truckIcon from "../../img/icons/truck.svg";
 import bagIcon from "../../img/icons/bag.svg";
 import searchIcon from "../../img/icons/search.svg";
 import cartIcon from "../../img/icons/cart.svg";
+import menuIcon from "../../img/icons/menu.svg";
 
 export const Header = () => {
   return (
@@ -33,6 +34,7 @@ export const Header = () => {
       </div>
       {/* Logo - Menu de navegacion - Buscar - Carrito  */}
       <div className="logo-menu-container">
+        <img src={menuIcon} alt="Menu" className="menu-icon" />    
         <div className="brand-logo-container">
           <h2 className="brand-title">BRAND</h2>
         </div>
@@ -79,8 +81,8 @@ export const Header = () => {
             </nav>
           </div>
           <div className="search-cart-container">
-            <img src={searchIcon} alt="Buscar" />
-            <img src={cartIcon} alt="Carrito" />
+            <img className="pointer" src={searchIcon} alt="Buscar" />    
+            <img src={cartIcon} alt="Carrito" style={{ marginLeft: '10px' }} className="pointer" /> 
           </div>
         </div>
       </div>

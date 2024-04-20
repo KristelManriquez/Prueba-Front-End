@@ -163,7 +163,7 @@
   color: #4d525c;
 }
 .product-title-container h2 {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .rate-information-container {
@@ -180,5 +180,25 @@
   margin-left: 5px;
   font-size: 14px;
   font-weight: 700;
-  color: #4A4A6A;
+  color: #4a4a6a;
+}
+
+@media only screen and (max-width: 950px) {
+  .single-product-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-information-container {
+    width: 100%;
+  }
+  .breadcrumbs-product-img {
+    width: 100%;
+  }
+  .product-img-main-container img {
+    width: 100%;
+  }
+  .product-imgs-container img {
+    width: 30%;
+  }
+
 }

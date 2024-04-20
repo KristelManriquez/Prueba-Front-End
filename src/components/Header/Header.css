@@ -1,17 +1,10 @@
-.header-content {
-  background: #eb00d3;
-  color: white;
-  width: 100%;
-  height: 141px;
-  margin-bottom: 2em;
-}
 .brand-logo-container {
   display: flex;
   justify-content: center;
-  height: 80px;
-  margin-top: 1.5em;
 }
 .nav-menu-container {
+  flex-grow: 1;
+  text-align: center;
   display: flex;
   justify-content: center;
 }
@@ -20,10 +13,12 @@
 }
 .logo-menu-container {
   display: flex;
+  height: 80px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 50px;
+  height: 100px;
+  background: #eb00d3;
 }
 .menu-items {
   display: flex;
@@ -36,19 +31,22 @@
 }
 .search-cart-container {
   display: flex;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
 }
 .user-actions-bar {
   background: #000000;
   height: 43px;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  position: relative; 
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 .msg-discount-container {
   color: #ffff;
-  position: absolute; 
-  left: 50%; 
+  position: absolute;
+  left: 50%;
   transform: translateX(-50%);
 }
 .user-actions-container {
@@ -56,7 +54,7 @@
   height: 20px;
   align-items: center;
   color: #ffff;
-  margin-left: auto; 
+  margin-left: auto;
 }
 .img-msg-container {
   display: flex;
@@ -77,13 +75,56 @@
   margin: 0 10px;
 }
 .brand-title {
-    font-weight: 800;
-    font-size: 40px;
-    color: #ffff;
+  font-weight: 800;
+  font-size: 40px;
+  margin: .4em 0 0 0;
+  color: #ffff;
 }
 .menu-search-cart-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  position: relative; 
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.search-cart-container {
+  margin-right: 2em;
+  margin-bottom: 10px;
+}
+.menu-icon {
+  width: 30px;
+  height: 30px;
+}
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .user-actions-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .msg-discount-container {
+    position: initial;
+    left: initial;
+    transform: initial;
+  }
+  .msg-discount-container p {
+    margin: 5px 0 10px 0;
+  }
+  .user-actions-container {
+    margin-left: 0;
+  }
+  .nav-menu-container {
+    display: none;
+  }
+  .user-actions-bar {
+    height: 80px;
+  }
+  .btn-menu-container {
+    display: flex;
+  }
 }

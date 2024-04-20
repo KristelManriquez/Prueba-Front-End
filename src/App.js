@@ -10,6 +10,7 @@ function App() {
       <Header/>
       <div className="main-container">
         <SingleProduct/>
+        <div className="divider"></div>
         <ProductCarousel/>
       </div>
     </div>
