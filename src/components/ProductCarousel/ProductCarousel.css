@@ -13,7 +13,7 @@
 .product-title {
   font-size: 16px;
   padding: 0;
-  margin: 5px;
+  margin-top: 5px;
 }
 .product-price-container {
   display: flex;
@@ -44,6 +44,7 @@
 .product-container {
   margin-left: 1.2em;
   margin-right: 1.2em;
+  text-align: left;
 }
 .products-container {
   display: flex;

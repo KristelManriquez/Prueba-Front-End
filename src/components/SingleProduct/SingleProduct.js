@@ -92,61 +92,63 @@ export const SingleProduct = () => {
             </p>
           </Card>
         </div>
-        <div>
-          <p>Sabor:</p>
+        <form>
           <div>
-            <select className="form-select">
-              <option selected>Escoger sabor</option>
-              {flavors.map((flavor) => (
-                <option key={flavor.name} value={flavor.name}>
-                  {flavor.name}
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
-        <div className="quantity-button-container">
-          <div className="quantity-container">
-            <div className="quantity-control-container">
-              <button
-                className="btn-control-quantity pointer"
-                id="btn-substract-quantity"
-                onClick={substractQuantity}
-              >
-                -
-              </button>
-            </div>
-            <div className="quantity">{productQuantity}</div>
-            <div className="quantity-control-container">
-              <button
-                className="btn-control-quantity pointer"
-                onClick={addQuantity}
-              >
-                +
-              </button>
+            <p>Sabor:</p>
+            <div>
+              <select className="form-select">
+                <option selected>Escoger sabor</option>
+                {flavors.map((flavor) => (
+                  <option key={flavor.name} value={flavor.name}>
+                    {flavor.name}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
-          <button className="btn-outline margin pointer">
-            Agregar al carrito
-          </button>
-        </div>
-        <div>
-          <p>Tipo de Entrega:</p>
-          <div className="inputs-radio-container">
-            <div className="input-radio-container">
-              <img src={truckIcon} alt="Delivery" />
-              <label className="input-radio-text">Despacho a domicilio</label>
-              <input type="radio" name="opcion" value="opcion1" />
+          <div className="quantity-button-container">
+            <div className="quantity-container">
+              <div className="quantity-control-container">
+                <button
+                  className="btn-control-quantity pointer"
+                  id="btn-substract-quantity"
+                  onClick={substractQuantity}
+                >
+                  -
+                </button>
+              </div>
+              <div className="quantity">{productQuantity}</div>
+              <div className="quantity-control-container">
+                <button
+                  className="btn-control-quantity pointer"
+                  onClick={addQuantity}
+                >
+                  +
+                </button>
+              </div>
             </div>
-            <div className="input-radio-container pick-up-btn-container">
-              <img src={storeIcon} alt="Retiro" />
-              <label className="input-radio-text">
-                Retiro en tienda GRATIS
-              </label>
-              <input type="radio" name="opcion" value="opcion1" />
+            <button className="btn-outline margin pointer">
+              Agregar al carrito
+            </button>
+          </div>
+          <div>
+            <p>Tipo de Entrega:</p>
+            <div className="inputs-radio-container">
+              <div className="input-radio-container">
+                <img src={truckIcon} alt="Delivery" />
+                <label className="input-radio-text">Despacho a domicilio</label>
+                <input type="radio" name="option" value="delivery" />
+              </div>
+              <div className="input-radio-container pick-up-btn-container">
+                <img src={storeIcon} alt="Retiro" />
+                <label className="input-radio-text">
+                  Retiro en tienda GRATIS
+                </label>
+                <input type="radio" name="option" value="pick-up" />
+              </div>
             </div>
           </div>
-        </div>
+        </form>
         <div className="rate-comments-container">
           <div className="rate-information-container">
             <div>
