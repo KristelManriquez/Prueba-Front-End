@@ -6,11 +6,8 @@ import bagIcon from "../../img/icons/bag.svg";
 import searchIcon from "../../img/icons/search.svg";
 import cartIcon from "../../img/icons/cart.svg";
 import menuIcon from "../../img/icons/menu.svg";
-import { MobileMenu } from "../MobileMenu/MobileMenu";
 
-export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+export const Header = ({ isMenuOpen, setIsMenuOpen }) => {
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -44,7 +41,7 @@ export const Header = () => {
       {/* Logo - Menu de navegacion - Buscar - Carrito  */}
       <div className="logo-menu-container">
         {/* Menu movil */}
-        <div className="mobile-menu-container">
+        <div>
           <a
             href="#"
             className="pointer"
@@ -54,7 +51,6 @@ export const Header = () => {
             <img src={menuIcon} alt="Menu" className="menu-icon" />
           </a>
         </div>
-        <div>{isMenuOpen && <MobileMenu />}</div>
         <div className="brand-logo-container">
           <h2 className="brand-title">BRAND</h2>
         </div>
