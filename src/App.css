@@ -21,6 +21,11 @@
   width: 90%;
   margin: 1em auto 4em;
 }
+@media only screen and (max-width: 460px) {
+  .divider {
+    margin-top: 1em;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

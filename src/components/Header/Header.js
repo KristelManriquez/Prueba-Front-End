@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import userIcon from "../../img/icons/user.svg";
 import truckIcon from "../../img/icons/truck.svg";
@@ -6,8 +6,15 @@ import bagIcon from "../../img/icons/bag.svg";
 import searchIcon from "../../img/icons/search.svg";
 import cartIcon from "../../img/icons/cart.svg";
 import menuIcon from "../../img/icons/menu.svg";
+import { MobileMenu } from "../MobileMenu/MobileMenu";
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="header-content">
       {/* Barra de msj descuento y acciones */}
@@ -20,31 +27,34 @@ export const Header = () => {
             <img src={userIcon} alt="Iniciar sesion" />
             <p>Iniciar sesi&oacute;n</p>
           </div>
-          <div className="vertical-divider"></div>
-          <div className="img-msg-container">
-            <img src={truckIcon} alt="Seguimiento" />
-            <p style={{ marginLeft: "5px" }}>Seguimiento</p>
-          </div>
-          <div className="vertical-divider"></div>
-          <div className="img-msg-container" style={{ marginRight: "10px" }}>
-            <img src={bagIcon} alt="Bolsa" />
-            <p>Tiendas</p>
+          <div className="vertical-divider hidde-in-mobile"></div>
+          <div className="tracking-store-container">
+            <div className="img-msg-container">
+              <img src={truckIcon} alt="Seguimiento" />
+              <p style={{ marginLeft: "5px" }}>Seguimiento</p>
+            </div>
+            <div className="vertical-divider"></div>
+            <div className="img-msg-container" style={{ marginRight: "10px" }}>
+              <img src={bagIcon} alt="Bolsa" />
+              <p>Tiendas</p>
+            </div>
           </div>
         </div>
       </div>
       {/* Logo - Menu de navegacion - Buscar - Carrito  */}
       <div className="logo-menu-container">
+        {/* Menu movil */}
         <div className="mobile-menu-container">
-          <a href="#" class="pointer" id="menuToggle">
-            <img src={menuIcon} alt="Menu" class="menu-icon" />
+          <a
+            href="#"
+            className="pointer"
+            id="menuToggle"
+            onClick={handleMenuToggle}
+          >
+            <img src={menuIcon} alt="Menu" className="menu-icon" />
           </a>
-          <div id="mobileMenu">
-            <a href="#" class="close-menu pointer">
-              Cerrar
-            </a>
-          </div>
         </div>
-
+        <div>{isMenuOpen && <MobileMenu />}</div>
         <div className="brand-logo-container">
           <h2 className="brand-title">BRAND</h2>
         </div>

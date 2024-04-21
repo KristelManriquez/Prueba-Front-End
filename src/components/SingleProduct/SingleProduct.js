@@ -6,6 +6,7 @@ import Card from "@mui/material/Card";
 import productImg from "../../img/product.png";
 import productImg2 from "../../img/product2.png";
 import starImg from "../../img/icons/star.svg";
+import commentIcon from "../../img/icons/comment.svg";
 
 export const SingleProduct = () => {
   // Consumo API
@@ -137,10 +138,7 @@ export const SingleProduct = () => {
               <label className="input-radio-text">Despacho a domicilio</label>
               <input type="radio" name="opcion" value="opcion1" />
             </div>
-            <div
-              className="input-radio-container"
-              style={{ marginLeft: "20px" }}
-            >
+            <div className="input-radio-container pick-up-btn-container">
               <img src={storeIcon} alt="Retiro" />
               <label className="input-radio-text">
                 Retiro en tienda GRATIS
@@ -149,16 +147,24 @@ export const SingleProduct = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="rate-comments-container">
           <div className="rate-information-container">
-            <span className="ratings-quantity">12</span>
-            <span style={{ marginRight: ".5em" }}>
-              valoraciones de clientes
-            </span>
-            <img src={starImg} alt="Estrella" />
-            <div className="stars-quantity-container">
-              <p>4.8</p>
+            <div>
+              <span className="ratings-quantity">12</span>
+              <span style={{ marginRight: ".5em" }}>
+                valoraciones de clientes
+              </span>
             </div>
+            <div className="stars-container">
+              <img src={starImg} alt="Estrella" />
+              <div className="stars-quantity-container">
+                <p>4.8</p>
+              </div>
+            </div>
+          </div>
+          <div className="comments-container pointer">
+            <img src={commentIcon} alt="Comentar" />
+            <p>Escribir comentario</p>
           </div>
         </div>
       </div>
